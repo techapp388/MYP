@@ -67,7 +67,33 @@ class TimeOffListView: BaseDataTableView<Approval, TimeOffApprovalField>, Storyb
             
         ]
     }
-    
+    private func showWaitingForPart(at index : Int) {
+//        guard let viewModel = viewModel as? PartListViewModel else { return }
+//        if !viewModel.hasWaitingJobs(at: index) {
+//            let message = "NO_WAITING_FOR_MESSAGE".localize
+//            GlobalFunction.showMessageAlert(fromView: self, title: "", message: message)
+//        }
+    }
+    private func openInventoryAction(for index: Int, with action: InventoryAction) {
+//        guard let stock = viewModel.getItem(at: index).stock else { return }
+//        let partInventoryView = PartInventoryView.instantiate(storyboard: .PART)
+//        partInventoryView.isEditingEnabled = true
+//        partInventoryView.bindData(stock: stock, action: action)
+//        navigationController?.pushViewController(partInventoryView, animated: true)
+    }
+    override func setMoreAction(at indexPath: IndexPath) -> [UIAlertAction] {
+        let addInventoryAction      = UIAlertAction(title: "Approve", style: .default) { [unowned self] (action) in
+            self.openInventoryAction(for: indexPath.section, with: .ADD_INVENTORY)
+        }
+        let removeInventoryAction   = UIAlertAction(title: "Reject", style: .default) { [unowned self] (action) in
+            self.openInventoryAction(for: indexPath.section, with: .REMOVE_INVENTORY)
+        }
+//        let transferInventoryAction = UIAlertAction(title: "ACTION_TRANSFER_INVENTORY".localize, style: .default) { [unowned self] (action) in
+//            self.openInventoryAction(for: indexPath.section, with: .TRANSFER_INVENTORY)
+//        }
+       
+        return [addInventoryAction,removeInventoryAction]
+    }
     override func getHeader(for columnIndex: NSInteger) -> String {
         return dataTableFields[columnIndex].rawValue.localize
     }

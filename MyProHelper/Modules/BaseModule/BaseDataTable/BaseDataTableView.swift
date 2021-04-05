@@ -160,7 +160,9 @@ class BaseDataTableView<T:RepositoryBaseModel,F>: BaseViewController, SwiftDataT
     
     //MARK: - Implement data table delegate methods
     func didSelectItem(_ dataTable: SwiftDataTable, indexPath: IndexPath) {
+        
         let moreAction = setMoreAction(at: indexPath)
+        
         let removeTitle = (viewModel.isItemRemoved(at: indexPath.section)) ? "UNDELETE".localize : "DELETE".localize
         
         let actionSheet = GlobalFunction.showListActionSheet(deleteTitle: removeTitle ,customActions: moreAction) { [weak self] (showAction) in

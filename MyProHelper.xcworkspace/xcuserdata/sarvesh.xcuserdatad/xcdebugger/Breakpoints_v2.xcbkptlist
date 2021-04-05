@@ -52,14 +52,14 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "53A4F3AB-379E-428D-A4F5-8CC6D2BBCA9B - d2a3f48ad21bb154"
+                  uuid = "53A4F3AB-379E-428D-A4F5-8CC6D2BBCA9B - 1f3861e4a85879ac"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "MyProHelper.TimeOffListViewModel.undeleteItem(at: Swift.Int) -&gt; ()"
                   moduleName = "MyProHelper"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sarvesh/Desktop/MPH-IOS-update_4_Apr/MyProHelper/MyProHelper/Modules/Approvals/Time%20Off%20Approval%20List%20%20/Time%20Off%20List%20View/TimeOffListViewModel.swift"
+                  urlString = "file:///Users/sarvesh/Documents/GitHub/MYP/MyProHelper/Modules/Approvals/Time%20Off%20Approval%20List%20%20/Time%20Off%20List%20View/TimeOffListViewModel.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "37"
@@ -67,14 +67,14 @@
                   offsetFromSymbolStart = "192">
                </Location>
                <Location
-                  uuid = "53A4F3AB-379E-428D-A4F5-8CC6D2BBCA9B - 321022647f517f21"
+                  uuid = "53A4F3AB-379E-428D-A4F5-8CC6D2BBCA9B - ff8bb70a0512b7d9"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "closure #1 (MyProHelper.Result&lt;Swift.String, MyProHelper.ErrorResult&gt;) -&gt; () in MyProHelper.TimeOffListViewModel.undeleteItem(at: Swift.Int) -&gt; ()"
                   moduleName = "MyProHelper"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sarvesh/Desktop/MPH-IOS-update_4_Apr/MyProHelper/MyProHelper/Modules/Approvals/Time%20Off%20Approval%20List%20%20/Time%20Off%20List%20View/TimeOffListViewModel.swift"
+                  urlString = "file:///Users/sarvesh/Documents/GitHub/MYP/MyProHelper/Modules/Approvals/Time%20Off%20Approval%20List%20%20/Time%20Off%20List%20View/TimeOffListViewModel.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "37"
@@ -382,10 +382,10 @@
             filePath = "Pods/SwiftDataTables/SwiftDataTables/Classes/SwiftDataTable.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "664"
-            endingLineNumber = "664"
-            landmarkName = "SwiftDataTable"
-            landmarkType = "21">
+            startingLineNumber = "665"
+            endingLineNumber = "665"
+            landmarkName = "searchBar(_:textDidChange:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -398,8 +398,8 @@
             filePath = "Pods/SwiftDataTables/SwiftDataTables/Classes/SwiftDataTable.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "668"
-            endingLineNumber = "668"
+            startingLineNumber = "669"
+            endingLineNumber = "669"
             landmarkName = "SwiftDataTable"
             landmarkType = "21">
          </BreakpointContent>
@@ -414,10 +414,10 @@
             filePath = "Pods/SwiftDataTables/SwiftDataTables/Classes/SwiftDataTable.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "671"
-            endingLineNumber = "671"
-            landmarkName = "searchBarSearchButtonClicked(_:)"
-            landmarkType = "7">
+            startingLineNumber = "672"
+            endingLineNumber = "672"
+            landmarkName = "SwiftDataTable"
+            landmarkType = "21">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -452,14 +452,14 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "8FDA8EA5-C922-4BF9-86AE-06B2C4103B38 - ca9a44e65b79f827"
+                  uuid = "8FDA8EA5-C922-4BF9-86AE-06B2C4103B38 - 775c2780b025c9b5"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "MyProHelper.BaseCreateWithAttachmentView.didDeleteAttachment(at: Swift.Int) -&gt; ()"
                   moduleName = "MyProHelper"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sarvesh/Desktop/MPH-IOS-update_4_Apr/MyProHelper/MyProHelper/Modules/BaseModule/BaseAttachment/BaseCreateWithAttachmentView.swift"
+                  urlString = "file:///Users/sarvesh/Documents/GitHub/MYP/MyProHelper/Modules/BaseModule/BaseAttachment/BaseCreateWithAttachmentView.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "81"
@@ -467,14 +467,14 @@
                   offsetFromSymbolStart = "1115">
                </Location>
                <Location
-                  uuid = "8FDA8EA5-C922-4BF9-86AE-06B2C4103B38 - 2d4af3f3660bd938"
+                  uuid = "8FDA8EA5-C922-4BF9-86AE-06B2C4103B38 - 908c90958d57e8aa"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "closure #1 () -&gt; () in MyProHelper.BaseCreateWithAttachmentView.didDeleteAttachment(at: Swift.Int) -&gt; ()"
                   moduleName = "MyProHelper"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sarvesh/Desktop/MPH-IOS-update_4_Apr/MyProHelper/MyProHelper/Modules/BaseModule/BaseAttachment/BaseCreateWithAttachmentView.swift"
+                  urlString = "file:///Users/sarvesh/Documents/GitHub/MYP/MyProHelper/Modules/BaseModule/BaseAttachment/BaseCreateWithAttachmentView.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "81"
@@ -516,14 +516,14 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "53313002-F67D-4548-9E45-E9B00E8C1FA2 - 33f637fb3a693ca6"
+                  uuid = "53313002-F67D-4548-9E45-E9B00E8C1FA2 - 8edbe4e67b17149"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "MyProHelper.BaseDataTableView.(deleteItem in _7073145A16335B40AFD499AB0E4E381D)(at: Foundation.IndexPath) -&gt; ()"
                   moduleName = "MyProHelper"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sarvesh/Desktop/MPH-IOS-update_4_Apr/MyProHelper/MyProHelper/Modules/BaseModule/BaseDataTable/BaseDataTableView.swift"
+                  urlString = "file:///Users/sarvesh/Documents/GitHub/MYP/MyProHelper/Modules/BaseModule/BaseDataTable/BaseDataTableView.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "97"
@@ -531,14 +531,14 @@
                   offsetFromSymbolStart = "153">
                </Location>
                <Location
-                  uuid = "53313002-F67D-4548-9E45-E9B00E8C1FA2 - f171a2bee89db67c"
+                  uuid = "53313002-F67D-4548-9E45-E9B00E8C1FA2 - ca6a2b0bb545fb93"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "closure #1 () -&gt; () in MyProHelper.BaseDataTableView.(deleteItem in _7073145A16335B40AFD499AB0E4E381D)(at: Foundation.IndexPath) -&gt; ()"
                   moduleName = "MyProHelper"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sarvesh/Desktop/MPH-IOS-update_4_Apr/MyProHelper/MyProHelper/Modules/BaseModule/BaseDataTable/BaseDataTableView.swift"
+                  urlString = "file:///Users/sarvesh/Documents/GitHub/MYP/MyProHelper/Modules/BaseModule/BaseDataTable/BaseDataTableView.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "97"
@@ -590,8 +590,8 @@
             filePath = "MyProHelper/Modules/Approvals/Time Off Approval List  /Time Off List View/TimeOffListView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "75"
-            endingLineNumber = "75"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
             landmarkName = "showItem(at:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -606,8 +606,8 @@
             filePath = "MyProHelper/Modules/Approvals/Time Off Approval List  /Time Off List View/TimeOffListView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "91"
-            endingLineNumber = "91"
+            startingLineNumber = "117"
+            endingLineNumber = "117"
             landmarkName = "editItem(at:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -622,8 +622,8 @@
             filePath = "MyProHelper/Global/GlobalFunction.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
             landmarkName = "showDeleteAlert(title:message:deleteAction:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -679,54 +679,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "E520B612-4D23-46FB-91B5-825BFC1B76EA"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MyProHelper/Modules/BaseModule/BaseDataTable/BaseDataTableView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "166"
-            endingLineNumber = "166"
-            landmarkName = "didSelectItem(_:indexPath:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "E520B612-4D23-46FB-91B5-825BFC1B76EA - 53a944de471dfd22"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "MyProHelper.BaseDataTableView.didSelectItem(_: SwiftDataTables.SwiftDataTable, indexPath: Foundation.IndexPath) -&gt; ()"
-                  moduleName = "MyProHelper"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sarvesh/Desktop/MPH-IOS-update_4_Apr/MyProHelper/MyProHelper/Modules/BaseModule/BaseDataTable/BaseDataTableView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "166"
-                  endingLineNumber = "166"
-                  offsetFromSymbolStart = "943">
-               </Location>
-               <Location
-                  uuid = "E520B612-4D23-46FB-91B5-825BFC1B76EA - e2e894a5c053948b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (__C.UIAlertAction) -&gt; () in MyProHelper.BaseDataTableView.didSelectItem(_: SwiftDataTables.SwiftDataTable, indexPath: Foundation.IndexPath) -&gt; ()"
-                  moduleName = "MyProHelper"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sarvesh/Desktop/MPH-IOS-update_4_Apr/MyProHelper/MyProHelper/Modules/BaseModule/BaseDataTable/BaseDataTableView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "166"
-                  endingLineNumber = "166"
-                  offsetFromSymbolStart = "183">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "1454A2EC-75AF-4D34-9FDA-11D6BB19CD15"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -772,14 +724,14 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "033BCBD1-6D9D-44AB-8885-472FB117FA59 - 9ea41951f00fae04"
+                  uuid = "033BCBD1-6D9D-44AB-8885-472FB117FA59 - 66be058fb2390cba"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "MyProHelper.CreateInvoiceView.serviceUsedActions(indexPath: Foundation.IndexPath, dataTable: SwiftDataTables.SwiftDataTable) -&gt; ()"
                   moduleName = "MyProHelper"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sarvesh/Desktop/MPH-IOS-update_4_Apr/MyProHelper/MyProHelper/Modules/Jobs/Invoices/CreateInvoice/CreateInvoiceView.swift"
+                  urlString = "file:///Users/sarvesh/Documents/GitHub/MYP/MyProHelper/Modules/Jobs/Invoices/CreateInvoice/CreateInvoiceView.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "580"
@@ -787,14 +739,14 @@
                   offsetFromSymbolStart = "971">
                </Location>
                <Location
-                  uuid = "033BCBD1-6D9D-44AB-8885-472FB117FA59 - 306a75ea7f98442c"
+                  uuid = "033BCBD1-6D9D-44AB-8885-472FB117FA59 - c87069343daee692"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "closure #1 (__C.UIAlertAction) -&gt; () in MyProHelper.CreateInvoiceView.serviceUsedActions(indexPath: Foundation.IndexPath, dataTable: SwiftDataTables.SwiftDataTable) -&gt; ()"
                   moduleName = "MyProHelper"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sarvesh/Desktop/MPH-IOS-update_4_Apr/MyProHelper/MyProHelper/Modules/Jobs/Invoices/CreateInvoice/CreateInvoiceView.swift"
+                  urlString = "file:///Users/sarvesh/Documents/GitHub/MYP/MyProHelper/Modules/Jobs/Invoices/CreateInvoice/CreateInvoiceView.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "580"
@@ -830,10 +782,154 @@
             filePath = "MyProHelper/Modules/BaseModule/BaseDataTable/BaseDataTableView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "164"
-            endingLineNumber = "164"
+            startingLineNumber = "166"
+            endingLineNumber = "166"
             landmarkName = "didSelectItem(_:indexPath:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C666628B-2F40-4D18-82C9-C38A8978F7E9"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyProHelper/Modules/Inventory/Parts/CreatePart/CreatePartView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "190"
+            endingLineNumber = "190"
+            landmarkName = "didTapOnItem(at:dataTable:data:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C666628B-2F40-4D18-82C9-C38A8978F7E9 - 1ba82b2666c2a57c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyProHelper.CreatePartView.didTapOnItem(at: Foundation.IndexPath, dataTable: SwiftDataTables.SwiftDataTable, data: MyProHelper.DataTableData) -&gt; ()"
+                  moduleName = "MyProHelper"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sarvesh/Documents/GitHub/MYP/MyProHelper/Modules/Inventory/Parts/CreatePart/CreatePartView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "190"
+                  endingLineNumber = "190"
+                  offsetFromSymbolStart = "996">
+               </Location>
+               <Location
+                  uuid = "C666628B-2F40-4D18-82C9-C38A8978F7E9 - 36202b41743fcbbb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.UIAlertAction) -&gt; () in MyProHelper.CreatePartView.didTapOnItem(at: Foundation.IndexPath, dataTable: SwiftDataTables.SwiftDataTable, data: MyProHelper.DataTableData) -&gt; ()"
+                  moduleName = "MyProHelper"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sarvesh/Documents/GitHub/MYP/MyProHelper/Modules/Inventory/Parts/CreatePart/CreatePartView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "190"
+                  endingLineNumber = "190"
+                  offsetFromSymbolStart = "94">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AE9C3B1A-2630-4150-A9DA-9107D9CEB210"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyProHelper/Modules/Jobs/Invoices/CreateInvoice/CreateInvoiceView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "619"
+            endingLineNumber = "619"
+            landmarkName = "partUsedActions(indexPath:dataTable:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "AE9C3B1A-2630-4150-A9DA-9107D9CEB210 - 7e55a3e1c6d1f218"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyProHelper.CreateInvoiceView.partUsedActions(indexPath: Foundation.IndexPath, dataTable: SwiftDataTables.SwiftDataTable) -&gt; ()"
+                  moduleName = "MyProHelper"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sarvesh/Documents/GitHub/MYP/MyProHelper/Modules/Jobs/Invoices/CreateInvoice/CreateInvoiceView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "619"
+                  endingLineNumber = "619"
+                  offsetFromSymbolStart = "971">
+               </Location>
+               <Location
+                  uuid = "AE9C3B1A-2630-4150-A9DA-9107D9CEB210 - b956201c9a7e1015"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.UIAlertAction) -&gt; () in MyProHelper.CreateInvoiceView.partUsedActions(indexPath: Foundation.IndexPath, dataTable: SwiftDataTables.SwiftDataTable) -&gt; ()"
+                  moduleName = "MyProHelper"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sarvesh/Documents/GitHub/MYP/MyProHelper/Modules/Jobs/Invoices/CreateInvoice/CreateInvoiceView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "619"
+                  endingLineNumber = "619"
+                  offsetFromSymbolStart = "94">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0402412D-7C93-40A1-9036-90C56C9545B0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyProHelper/Modules/Jobs/Invoices/CreateInvoice/CreateInvoiceView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "658"
+            endingLineNumber = "658"
+            landmarkName = "supplyUsedActions(indexPath:dataTable:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "0402412D-7C93-40A1-9036-90C56C9545B0 - d5fabc842b882e31"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyProHelper.CreateInvoiceView.supplyUsedActions(indexPath: Foundation.IndexPath, dataTable: SwiftDataTables.SwiftDataTable) -&gt; ()"
+                  moduleName = "MyProHelper"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sarvesh/Documents/GitHub/MYP/MyProHelper/Modules/Jobs/Invoices/CreateInvoice/CreateInvoiceView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "658"
+                  endingLineNumber = "658"
+                  offsetFromSymbolStart = "971">
+               </Location>
+               <Location
+                  uuid = "0402412D-7C93-40A1-9036-90C56C9545B0 - 75d9daf10734d2ae"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.UIAlertAction) -&gt; () in MyProHelper.CreateInvoiceView.supplyUsedActions(indexPath: Foundation.IndexPath, dataTable: SwiftDataTables.SwiftDataTable) -&gt; ()"
+                  moduleName = "MyProHelper"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sarvesh/Documents/GitHub/MYP/MyProHelper/Modules/Jobs/Invoices/CreateInvoice/CreateInvoiceView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "658"
+                  endingLineNumber = "658"
+                  offsetFromSymbolStart = "94">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
