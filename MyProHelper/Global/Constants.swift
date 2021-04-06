@@ -51,6 +51,8 @@ struct Constants {
         case JOB_DETAIL                = "JobDetail"
         case APPROVAL_LIST             = "ApprovalsList"
         case ADD_TIMEOFF               = "AddTimeOff"
+        
+        case AddTimeOffApprovalView = "AddTimeOffApprovalView"
 
     }
     

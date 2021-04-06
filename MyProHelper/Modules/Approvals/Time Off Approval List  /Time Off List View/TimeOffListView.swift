@@ -99,6 +99,7 @@ class TimeOffListView: BaseDataTableView<Approval, TimeOffApprovalField>, Storyb
     }
     
     override func showItem(at indexPath: IndexPath) {
+
         let createWorker = CreateWorkerView.instantiate(storyboard: .ADD_TIMEOFF)
         let worker = viewModel.getItem(at: indexPath.section)
        // createWorker.isShowingWorker = true
@@ -115,16 +116,18 @@ class TimeOffListView: BaseDataTableView<Approval, TimeOffApprovalField>, Storyb
 
 
     override func editItem(at indexPath: IndexPath) {
-        let createWorker = CreateWorkerView.instantiate(storyboard: .ADD_TIMEOFF)
-        let worker = viewModel.getItem(at: indexPath.section)
-       // createWorker.createWorkerViewModel.setWorker(worker: worker)
-        createWorker.createWorkerViewModel.worker.bind { [weak self] (worker) in
-            guard let self = self else { return }
-            createWorker.createWorkerViewModel.setWorker(worker: worker)
+      //  let createWorker = CreateWorkerView.instantiate(storyboard: .ADD_TIMEOFF)
+        let createWorker = CreateWorkerView.instantiate(storyboard: .AddTimeOffApprovalView)
 
-        createWorker.setViewMode(isEditingEnabled: true)
-      //  navigationController?.pushViewController(createWorker, animated: true)
+//        let worker = viewModel.getItem(at: indexPath.section)
+//       // createWorker.createWorkerViewModel.setWorker(worker: worker)
+//        createWorker.createWorkerViewModel.worker.bind { [weak self] (worker) in
+//            guard let self = self else { return }
+//            createWorker.createWorkerViewModel.setWorker(worker: worker)
+//
+//        createWorker.setViewMode(isEditingEnabled: true)
+//      //  navigationController?.pushViewController(createWorker, animated: true)
         self.present(createWorker, animated: true, completion: nil)
-    }
+   // }
     }
 }

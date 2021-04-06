@@ -116,7 +116,7 @@
                                                                 </connections>
                                                             </button>
                                                             <datePicker contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="buP-Yg-feG">
-                                                                <rect key="frame" x="0.0" y="0.0" width="151" height="40"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="150.5" height="40"/>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                                                         <real key="value" value="1"/>
@@ -192,7 +192,7 @@
                                                                 </connections>
                                                             </button>
                                                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="82Q-P2-vZG">
-                                                                <rect key="frame" x="0.0" y="0.0" width="145" height="40"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="145.5" height="40"/>
                                                             </datePicker>
                                                         </subviews>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -497,7 +497,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ME5-ap-53d">
                                                 <rect key="frame" x="0.0" y="0.0" width="314" height="70"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description *" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tjl-xM-1W3">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tjl-xM-1W3">
                                                         <rect key="frame" x="10" y="1" width="129" height="17"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="129" id="Sod-fM-Sb9"/>
