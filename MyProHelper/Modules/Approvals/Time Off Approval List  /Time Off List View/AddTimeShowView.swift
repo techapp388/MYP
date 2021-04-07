@@ -27,7 +27,7 @@ class AddTimeShowView: UIViewController,Storyboarded {
     @IBOutlet weak var startDatePicker: UIDatePicker!
     @IBOutlet weak var endDatePicker: UIDatePicker!
     var HeightConstraint: NSLayoutConstraint?
-    
+   
     let service = WorkersService()
     
     let timeOffApprovalservice = TimeOffApprovalService()
@@ -37,7 +37,7 @@ class AddTimeShowView: UIViewController,Storyboarded {
     var leaveStatusPickerDataSource = ["Approved","Requested","Rejected"]
     var workersPickerDataSource: [Worker] = []
     var selectedWorker: Worker!
-    
+    var worrrr = Approval.self
     let datePicker = UIDatePicker()
     var selectedDatePicker = Int()
     

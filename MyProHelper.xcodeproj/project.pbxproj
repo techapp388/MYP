@@ -262,6 +262,10 @@
 		60F31B5B24AE148A0089CDF7 /* DashboardLayoutTableHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F31B5A24AE148A0089CDF7 /* DashboardLayoutTableHeader.swift */; };
 		79623A58261DC83200A34CF6 /* AddTimeShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79623A57261DC83200A34CF6 /* AddTimeShowView.swift */; };
 		79623A5D261DC93300A34CF6 /* AddtimeShow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79623A5C261DC93300A34CF6 /* AddtimeShow.storyboard */; };
+		79623A62261DFDF600A34CF6 /* ApproveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79623A61261DFDF600A34CF6 /* ApproveView.swift */; };
+		79623A67261DFE3D00A34CF6 /* rejectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79623A66261DFE3D00A34CF6 /* rejectView.swift */; };
+		79623A6C261DFEC700A34CF6 /* ApproveView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79623A6B261DFEC700A34CF6 /* ApproveView.storyboard */; };
+		79623A71261DFEE300A34CF6 /* rejectView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79623A70261DFEE300A34CF6 /* rejectView.storyboard */; };
 		799AE9A8261827D200C9D787 /* 299.db in Resources */ = {isa = PBXBuildFile; fileRef = 799AE9A7261827D200C9D787 /* 299.db */; };
 		799AE9B0261827EB00C9D787 /* 299LocationData.db in Resources */ = {isa = PBXBuildFile; fileRef = 799AE9AF261827EB00C9D787 /* 299LocationData.db */; };
 		8B12C12524C56ECE00FCAD5E /* Wage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B12C12424C56ECE00FCAD5E /* Wage.swift */; };
@@ -680,6 +684,10 @@
 		60F31B5A24AE148A0089CDF7 /* DashboardLayoutTableHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardLayoutTableHeader.swift; sourceTree = "<group>"; };
 		79623A57261DC83200A34CF6 /* AddTimeShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTimeShowView.swift; sourceTree = "<group>"; };
 		79623A5C261DC93300A34CF6 /* AddtimeShow.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddtimeShow.storyboard; sourceTree = "<group>"; };
+		79623A61261DFDF600A34CF6 /* ApproveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApproveView.swift; sourceTree = "<group>"; };
+		79623A66261DFE3D00A34CF6 /* rejectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rejectView.swift; sourceTree = "<group>"; };
+		79623A6B261DFEC700A34CF6 /* ApproveView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ApproveView.storyboard; sourceTree = "<group>"; };
+		79623A70261DFEE300A34CF6 /* rejectView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = rejectView.storyboard; sourceTree = "<group>"; };
 		799AE9A7261827D200C9D787 /* 299.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = 299.db; sourceTree = "<group>"; };
 		799AE9AF261827EB00C9D787 /* 299LocationData.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = 299LocationData.db; sourceTree = "<group>"; };
 		7FB777A367EF49FFB85525F6 /* Pods-MyProHelperTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyProHelperTests.release.xcconfig"; path = "Target Support Files/Pods-MyProHelperTests/Pods-MyProHelperTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -1531,8 +1539,10 @@
 			isa = PBXGroup;
 			children = (
 				52292516260903060066F02C /* AddTimeOff.storyboard */,
+				79623A70261DFEE300A34CF6 /* rejectView.storyboard */,
 				52292517260903060066F02C /* ApprovalsList.storyboard */,
 				79623A5C261DC93300A34CF6 /* AddtimeShow.storyboard */,
+				79623A6B261DFEC700A34CF6 /* ApproveView.storyboard */,
 			);
 			path = Approvals;
 			sourceTree = "<group>";
@@ -1561,6 +1571,8 @@
 				5229252D260905310066F02C /* TimeOffListView.swift */,
 				5229252C260905310066F02C /* TimeOffListViewModel.swift */,
 				79623A57261DC83200A34CF6 /* AddTimeShowView.swift */,
+				79623A61261DFDF600A34CF6 /* ApproveView.swift */,
+				79623A66261DFE3D00A34CF6 /* rejectView.swift */,
 			);
 			path = "Time Off List View";
 			sourceTree = "<group>";
@@ -2645,6 +2657,7 @@
 				46D362B6259CE5A200A908EC /* AddressCell.xib in Resources */,
 				46E884EE2590008E008A7BBC /* CheckboxHeaderCell.xib in Resources */,
 				8FB5E5CE25482E7700E7B09C /* AppListCell.xib in Resources */,
+				79623A6C261DFEC700A34CF6 /* ApproveView.storyboard in Resources */,
 				143AC55125B9A3BB00DABF63 /* JobDecline.storyboard in Resources */,
 				8F78508C2547420A0030B44A /* Service.storyboard in Resources */,
 				8F7850BB254769270030B44A /* AssetType.storyboard in Resources */,
@@ -2706,6 +2719,7 @@
 				14A04A9125B84F2900755A2D /* JobConfirmation.storyboard in Resources */,
 				8F1690992548370C00A1FE8F /* Asset.storyboard in Resources */,
 				8FD7AC902549DDB5006CDEDA /* ScheduleJobs.storyboard in Resources */,
+				79623A71261DFEE300A34CF6 /* rejectView.storyboard in Resources */,
 				469C424725BF6E85006DCDD5 /* ProfileCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2841,6 +2855,7 @@
 				A8BBBEC325076CE20092A057 /* VendorRepository.swift in Sources */,
 				147E3E2D25CC317500F026C2 /* CreateInvoiceView.swift in Sources */,
 				463AEE602593B2F9007B0A78 /* BaseViewController.swift in Sources */,
+				79623A62261DFDF600A34CF6 /* ApproveView.swift in Sources */,
 				60C0E9F7248A1D7C00CED398 /* AppDelegate.swift in Sources */,
 				14A04A9E25B857F600755A2D /* JobConfirmationRepository.swift in Sources */,
 				4690205725B4656A001BCDC7 /* WorkerRolesRepository.swift in Sources */,
@@ -2876,6 +2891,7 @@
 				8FD418CA25407E890016E2A9 /* PartLocationListView.swift in Sources */,
 				144844B225BDB15600169C84 /* QuoteListViewModel.swift in Sources */,
 				14CDBD5E25BF32D300C77E28 /* CustomerJobHistoryViewModel.swift in Sources */,
+				79623A67261DFE3D00A34CF6 /* rejectView.swift in Sources */,
 				14A9F9B025BF5A0E005EB716 /* CustomerJobHistory.swift in Sources */,
 				14A9F9B525BF5F04005EB716 /* CustomerJobHistoryRepository.swift in Sources */,
 				147BA88025CB509300E17546 /* Invoice.swift in Sources */,

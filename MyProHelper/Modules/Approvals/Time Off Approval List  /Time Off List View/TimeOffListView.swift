@@ -99,11 +99,10 @@ class TimeOffListView: BaseDataTableView<Approval, TimeOffApprovalField>, Storyb
     }
     
     override func showItem(at indexPath: IndexPath) {
-        let createWorker = AddTimeShowView.instantiate(storyboard: .ADDTIMEOFF)
+        var createWorker = AddTimeShowView.instantiate(storyboard: .ADDTIMEOFF)
         let worker = viewModel.getItem(at: indexPath.section)
         print("hh",worker)
        // createWorker.leaveStatusTxtField.text = "hh"
-
        self.present(createWorker, animated: true, completion: nil)
         
         
