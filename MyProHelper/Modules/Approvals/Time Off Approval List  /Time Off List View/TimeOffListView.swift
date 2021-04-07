@@ -99,35 +99,34 @@ class TimeOffListView: BaseDataTableView<Approval, TimeOffApprovalField>, Storyb
     }
     
     override func showItem(at indexPath: IndexPath) {
-
-        let createWorker = CreateWorkerView.instantiate(storyboard: .ADD_TIMEOFF)
+        let createWorker = AddTimeShowView.instantiate(storyboard: .ADDTIMEOFF)
         let worker = viewModel.getItem(at: indexPath.section)
-       // createWorker.isShowingWorker = true
+        print("hh",worker)
+       // createWorker.leaveStatusTxtField.text = "hh"
+
+       self.present(createWorker, animated: true, completion: nil)
+        
+        
+//        let createWorker = CreateWorkerView.instantiate(storyboard: .ADD_TIMEOFF)
+//        let worker = viewModel.getItem(at: indexPath.section)
+        //createWorker.isShowingWorker = true
 //        createWorker.createWorkerViewModel.worker.bind { [weak self] (worker) in
 //            guard let self = self else { return }
 //            createWorker.createWorkerViewModel.setWorker(worker: worker)
         //createWorker.createWorkerViewModel.setWorker(worker: worker)
-        createWorker.setViewMode(isEditingEnabled: false)
-       // navigationController?.pushViewController(createWorker, animated: true)
-        self.present(createWorker, animated: true, completion: nil)
+//        createWorker.setViewMode(isEditingEnabled: false)
+//       // navigationController?.pushViewController(createWorker, animated: true)
+       // self.present(createWorker, animated: true, completion: nil)
         
    // }
     }
 
 
     override func editItem(at indexPath: IndexPath) {
-      //  let createWorker = CreateWorkerView.instantiate(storyboard: .ADD_TIMEOFF)
-        let createWorker = CreateWorkerView.instantiate(storyboard: .AddTimeOffApprovalView)
-
-//        let worker = viewModel.getItem(at: indexPath.section)
-//       // createWorker.createWorkerViewModel.setWorker(worker: worker)
-//        createWorker.createWorkerViewModel.worker.bind { [weak self] (worker) in
-//            guard let self = self else { return }
-//            createWorker.createWorkerViewModel.setWorker(worker: worker)
-//
-//        createWorker.setViewMode(isEditingEnabled: true)
-//      //  navigationController?.pushViewController(createWorker, animated: true)
+        let createWorker = AddTimeOffApprovalView.instantiate(storyboard: .ADD_TIMEOFF)
+        let worker = viewModel.getItem(at: indexPath.section)
+        print("hh",worker)
         self.present(createWorker, animated: true, completion: nil)
-   // }
+
     }
 }

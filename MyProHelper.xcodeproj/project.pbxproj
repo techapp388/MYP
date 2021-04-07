@@ -260,6 +260,8 @@
 		60C0EA3E248A6FF600CED398 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C0EA3D248A6FF600CED398 /* Constants.swift */; };
 		60F31B5924AE14720089CDF7 /* DashboardLayoutTableHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60F31B5824AE14720089CDF7 /* DashboardLayoutTableHeader.xib */; };
 		60F31B5B24AE148A0089CDF7 /* DashboardLayoutTableHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F31B5A24AE148A0089CDF7 /* DashboardLayoutTableHeader.swift */; };
+		79623A58261DC83200A34CF6 /* AddTimeShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79623A57261DC83200A34CF6 /* AddTimeShowView.swift */; };
+		79623A5D261DC93300A34CF6 /* AddtimeShow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79623A5C261DC93300A34CF6 /* AddtimeShow.storyboard */; };
 		799AE9A8261827D200C9D787 /* 299.db in Resources */ = {isa = PBXBuildFile; fileRef = 799AE9A7261827D200C9D787 /* 299.db */; };
 		799AE9B0261827EB00C9D787 /* 299LocationData.db in Resources */ = {isa = PBXBuildFile; fileRef = 799AE9AF261827EB00C9D787 /* 299LocationData.db */; };
 		8B12C12524C56ECE00FCAD5E /* Wage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B12C12424C56ECE00FCAD5E /* Wage.swift */; };
@@ -676,6 +678,8 @@
 		60C0EA3D248A6FF600CED398 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		60F31B5824AE14720089CDF7 /* DashboardLayoutTableHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashboardLayoutTableHeader.xib; sourceTree = "<group>"; };
 		60F31B5A24AE148A0089CDF7 /* DashboardLayoutTableHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardLayoutTableHeader.swift; sourceTree = "<group>"; };
+		79623A57261DC83200A34CF6 /* AddTimeShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTimeShowView.swift; sourceTree = "<group>"; };
+		79623A5C261DC93300A34CF6 /* AddtimeShow.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddtimeShow.storyboard; sourceTree = "<group>"; };
 		799AE9A7261827D200C9D787 /* 299.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = 299.db; sourceTree = "<group>"; };
 		799AE9AF261827EB00C9D787 /* 299LocationData.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = 299LocationData.db; sourceTree = "<group>"; };
 		7FB777A367EF49FFB85525F6 /* Pods-MyProHelperTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyProHelperTests.release.xcconfig"; path = "Target Support Files/Pods-MyProHelperTests/Pods-MyProHelperTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -1528,6 +1532,7 @@
 			children = (
 				52292516260903060066F02C /* AddTimeOff.storyboard */,
 				52292517260903060066F02C /* ApprovalsList.storyboard */,
+				79623A5C261DC93300A34CF6 /* AddtimeShow.storyboard */,
 			);
 			path = Approvals;
 			sourceTree = "<group>";
@@ -1555,6 +1560,7 @@
 				5229252B260905310066F02C /* EditPickerViewController.swift */,
 				5229252D260905310066F02C /* TimeOffListView.swift */,
 				5229252C260905310066F02C /* TimeOffListViewModel.swift */,
+				79623A57261DC83200A34CF6 /* AddTimeShowView.swift */,
 			);
 			path = "Time Off List View";
 			sourceTree = "<group>";
@@ -2649,6 +2655,7 @@
 				A8589CCA24B45C7D00EC70C9 /* GenericMenuSubmenuTableViewCell.xib in Resources */,
 				46EA681F259A142C00CEF21D /* SwitchButton.xib in Resources */,
 				A879563624A6144D00E0E46C /* DashboardViewController.xib in Resources */,
+				79623A5D261DC93300A34CF6 /* AddtimeShow.storyboard in Resources */,
 				463FF123256D536200D555A1 /* Supply.storyboard in Resources */,
 				46D362AF259CE56800A908EC /* PersonalInfoCell.xib in Resources */,
 				60C0EA00248A1D8300CED398 /* Assets.xcassets in Resources */,
@@ -3129,6 +3136,7 @@
 				1462EDF925C802B300B21FE5 /* CreateQuoteEstimateView.swift in Sources */,
 				5229251E260904000066F02C /* TimeOffApprovalService.swift in Sources */,
 				8FA8417A25589C310034D74C /* CreatePartStockView.swift in Sources */,
+				79623A58261DC83200A34CF6 /* AddTimeShowView.swift in Sources */,
 				46D362AE259CE56800A908EC /* PersonalInfoCell.swift in Sources */,
 				A8C61C3E24ED4CDD00B3F759 /* CreateCustomerViewModel.swift in Sources */,
 				46EA6817259A13E000CEF21D /* SwitchButton.swift in Sources */,
