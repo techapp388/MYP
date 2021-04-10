@@ -67,30 +67,32 @@ class TimeOffListView: BaseDataTableView<Approval, TimeOffApprovalField>, Storyb
             
         ]
     }
-    private func showWaitingForPart(at index : Int) {
-//        guard let viewModel = viewModel as? PartListViewModel else { return }
-//        if !viewModel.hasWaitingJobs(at: index) {
-//            let message = "NO_WAITING_FOR_MESSAGE".localize
-//            GlobalFunction.showMessageAlert(fromView: self, title: "", message: message)
-//        }
+
+   // private func showItem(at indexPath: IndexPath) {
+
+    private func ApprovelAction(for index: Int, with action: ShowApprovelAction) {
+        let createWorker = ApproveView.instantiate(storyboard: .APPROVEVIEW)
+        let worker = viewModel.getItem(at:index)
+       print("awsthi",worker)
+        self.present(createWorker, animated: true, completion: nil)
+        
+        
     }
-    private func openInventoryAction(for index: Int, with action: InventoryAction) {
-//        guard let stock = viewModel.getItem(at: index).stock else { return }
-//        let partInventoryView = PartInventoryView.instantiate(storyboard: .PART)
-//        partInventoryView.isEditingEnabled = true
-//        partInventoryView.bindData(stock: stock, action: action)
-//        navigationController?.pushViewController(partInventoryView, animated: true)
+    private func RejectionAction(for index: Int, with action: ShowApprovelAction) {
+        let createWorker = rejectView.instantiate(storyboard: .REJECTVIEW)
+        let worker = viewModel.getItem(at:index)
+        print("awsthi",worker)
+        self.present(createWorker, animated: true, completion: nil)
+        
+        
     }
     override func setMoreAction(at indexPath: IndexPath) -> [UIAlertAction] {
         let addInventoryAction      = UIAlertAction(title: "Approve", style: .default) { [unowned self] (action) in
-            self.openInventoryAction(for: indexPath.section, with: .ADD_INVENTORY)
+            self.ApprovelAction(for: indexPath.section, with: .APPROVE)
         }
         let removeInventoryAction   = UIAlertAction(title: "Reject", style: .default) { [unowned self] (action) in
-            self.openInventoryAction(for: indexPath.section, with: .REMOVE_INVENTORY)
+            self.RejectionAction(for: indexPath.section, with: .REJECT)
         }
-//        let transferInventoryAction = UIAlertAction(title: "ACTION_TRANSFER_INVENTORY".localize, style: .default) { [unowned self] (action) in
-//            self.openInventoryAction(for: indexPath.section, with: .TRANSFER_INVENTORY)
-//        }
        
         return [addInventoryAction,removeInventoryAction]
     }

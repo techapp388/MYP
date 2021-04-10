@@ -260,6 +260,7 @@
 		60C0EA3E248A6FF600CED398 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C0EA3D248A6FF600CED398 /* Constants.swift */; };
 		60F31B5924AE14720089CDF7 /* DashboardLayoutTableHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60F31B5824AE14720089CDF7 /* DashboardLayoutTableHeader.xib */; };
 		60F31B5B24AE148A0089CDF7 /* DashboardLayoutTableHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F31B5A24AE148A0089CDF7 /* DashboardLayoutTableHeader.swift */; };
+		792D22C62621FA0A00236E9F /* ShowApprovel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792D22C52621FA0A00236E9F /* ShowApprovel.swift */; };
 		79623A58261DC83200A34CF6 /* AddTimeShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79623A57261DC83200A34CF6 /* AddTimeShowView.swift */; };
 		79623A5D261DC93300A34CF6 /* AddtimeShow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79623A5C261DC93300A34CF6 /* AddtimeShow.storyboard */; };
 		79623A62261DFDF600A34CF6 /* ApproveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79623A61261DFDF600A34CF6 /* ApproveView.swift */; };
@@ -682,6 +683,7 @@
 		60C0EA3D248A6FF600CED398 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		60F31B5824AE14720089CDF7 /* DashboardLayoutTableHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashboardLayoutTableHeader.xib; sourceTree = "<group>"; };
 		60F31B5A24AE148A0089CDF7 /* DashboardLayoutTableHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardLayoutTableHeader.swift; sourceTree = "<group>"; };
+		792D22C52621FA0A00236E9F /* ShowApprovel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowApprovel.swift; sourceTree = "<group>"; };
 		79623A57261DC83200A34CF6 /* AddTimeShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTimeShowView.swift; sourceTree = "<group>"; };
 		79623A5C261DC93300A34CF6 /* AddtimeShow.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddtimeShow.storyboard; sourceTree = "<group>"; };
 		79623A61261DFDF600A34CF6 /* ApproveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApproveView.swift; sourceTree = "<group>"; };
@@ -1709,6 +1711,7 @@
 				14209DED25E3FF2C0061C15B /* JobDetail.swift */,
 				144BF5D325DA8B19002F0B18 /* Receipt.swift */,
 				52292522260904270066F02C /* Approval.swift */,
+				792D22C52621FA0A00236E9F /* ShowApprovel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -2870,6 +2873,7 @@
 				8F9217082541D87900220714 /* BaseCreateItemView.swift in Sources */,
 				14C406F925B603DF00F0EFE4 /* SupplyLocationService.swift in Sources */,
 				46E8CD02259D2D84006BEACE /* RadioButtonCell.swift in Sources */,
+				792D22C62621FA0A00236E9F /* ShowApprovel.swift in Sources */,
 				8F193D312550430B000DE272 /* PartFinderRepository.swift in Sources */,
 				8F363C722549958F00756AFA /* WorkerListView.swift in Sources */,
 				46F5F9D2255335D50040D39C /* Attachment.swift in Sources */,
