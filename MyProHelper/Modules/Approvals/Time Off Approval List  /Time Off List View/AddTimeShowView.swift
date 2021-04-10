@@ -27,7 +27,12 @@ class AddTimeShowView: UIViewController,Storyboarded {
     @IBOutlet weak var startDatePicker: UIDatePicker!
     @IBOutlet weak var endDatePicker: UIDatePicker!
     var HeightConstraint: NSLayoutConstraint?
-   
+    var workername = String()
+    var startdate = Date()
+    var enddate = Date()
+    var leavetype = String()
+    var leavestatus = String()
+    var descriptiontext = String()
     let service = WorkersService()
     
     let timeOffApprovalservice = TimeOffApprovalService()
@@ -130,7 +135,18 @@ class AddTimeShowView: UIViewController,Storyboarded {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.workerTextField.text = "sdfds"
+        self.workerTextField.text = workername
+        self.leaveStatusTxtField.text = leavestatus
+        self.leaveTypeTxtField.text = leavetype
+        // Create Date Formatter
+        
+       // let dateFormatter = DateFormatter()
+//        let dateString = startdate.getFormattedDateString(format: "yyyy-MM-dd HH:mm:ss")
+//           print("dateString > \(dateString)")
+        // Convert Date to String
+       // dateFormatter.string(from: startdate)
+      //  self.startDateTxtField.text =  dateFormatter.string(from: startdate)
+       // self.endDateTxtField.text = enddate
     }
 
     private func setupTapGesture() {
