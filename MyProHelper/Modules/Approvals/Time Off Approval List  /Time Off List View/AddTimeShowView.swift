@@ -33,6 +33,7 @@ class AddTimeShowView: UIViewController,Storyboarded {
     var leavetype = String()
     var leavestatus = String()
     var descriptiontext = String()
+    var remark = String()
     let service = WorkersService()
     
     let timeOffApprovalservice = TimeOffApprovalService()
@@ -138,6 +139,8 @@ class AddTimeShowView: UIViewController,Storyboarded {
         self.workerTextField.text = workername
         self.leaveStatusTxtField.text = leavestatus
         self.leaveTypeTxtField.text = leavetype
+        self.descriptionTextField.text = descriptiontext
+        self.remarksTextField.text = remark
         // Create Date Formatter
         
        // let dateFormatter = DateFormatter()

@@ -108,6 +108,8 @@ class TimeOffListView: BaseDataTableView<Approval, TimeOffApprovalField>, Storyb
         createWorker.enddate = worker.enddate!
         createWorker.leavetype = worker.typeofleave!
         createWorker.leavestatus = worker.status!
+        createWorker.descriptiontext = worker.description!
+        createWorker.remark = worker.remark!
         
        // createWorker.leaveStatusTxtField.text = "hh"
        self.present(createWorker, animated: true, completion: nil)
