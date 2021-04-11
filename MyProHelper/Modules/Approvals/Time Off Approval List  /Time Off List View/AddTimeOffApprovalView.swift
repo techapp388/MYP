@@ -31,7 +31,13 @@ class AddTimeOffApprovalView: UIViewController,Storyboarded {
     @IBOutlet weak var startDatePicker: UIDatePicker!
     @IBOutlet weak var endDatePicker: UIDatePicker!
     var HeightConstraint: NSLayoutConstraint?
-    
+    var workername = String()
+    var startdate = Date()
+    var enddate = Date()
+    var leavetype = String()
+    var leavestatus = String()
+    var descriptiontext = String()
+    var remark = String()
     let service = WorkersService()
     
     let timeOffApprovalservice = TimeOffApprovalService()
@@ -53,6 +59,11 @@ class AddTimeOffApprovalView: UIViewController,Storyboarded {
         
         self.remarksStackView.isHidden = true
         self.fetchWorker()
+        self.workerTextField.text = workername
+        self.leaveStatusTxtField.text = leavestatus
+        self.leaveTypeTxtField.text = leavetype
+        self.descriptionTextField.text = descriptiontext
+        self.remarksTextField.text = remark
     }
     @objc func dueDateChanged(sender:UIDatePicker){
         let formatter = DateFormatter()

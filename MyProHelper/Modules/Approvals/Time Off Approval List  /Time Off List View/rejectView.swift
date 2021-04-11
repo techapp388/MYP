@@ -1,10 +1,4 @@
-//
-//  rejectView.swift
-//  MyProHelper
-//
-//  Created by Sarvesh on 07/04/21.
-//  Copyright © 2021 Benchmark Computing. All rights reserved.
-//
+
 
 import Foundation
 import UIKit
@@ -15,7 +9,17 @@ class rejectView: UIViewController,Storyboarded {
     @IBOutlet weak var DiscardButton: UIButton!
     @IBOutlet weak var SaveButton: UIButton!
     @IBOutlet weak var remarksTextField: UITextField!
-
+    let timeOffApprovalservice = TimeOffApprovalService()
+    var selectedWorker: Worker!
+    var workersPickerDataSource: [Worker] = []
+    var workername = String()
+    var startdate = Date()
+    var enddate = Date()
+    var leavetype = String()
+    var leavestatus = String()
+    var descriptiontext = String()
+    var remark = String()
+    var workerID = Int()
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTapGesture()
@@ -38,7 +42,7 @@ class rejectView: UIViewController,Storyboarded {
         if (remarksTextField.text == "") {
             print("name")
             // create the alert
-            let alert = UIAlertController(title: "Remarks", message: "Please fill the remarks", preferredStyle: UIAlertController.Style.alert)
+                   let alert = UIAlertController(title: "Remarks", message: "Please fill the remarks", preferredStyle: UIAlertController.Style.alert)
 
                    // add an action (button)
                    alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
@@ -46,9 +50,41 @@ class rejectView: UIViewController,Storyboarded {
                    // show the alert
                    self.present(alert, animated: true, completion: nil)
         }else{
-            handleDismissView()
+            
+             let formatter = DateFormatter()
+            formatter.dateFormat = "yyyy-MM-dd"
+            var approvaldata = Approval()
+            approvaldata.approvername = "Adam"
+            approvaldata.approvedby = 1
+            approvaldata.approveddate = Date()
+            approvaldata.workerID = workerID
+            approvaldata.workername = workername
+            approvaldata.worker = selectedWorker
+            approvaldata.startdate = startdate
+            approvaldata.enddate = enddate
+            approvaldata.typeofleave = leavetype
+            approvaldata.status = leavestatus
+            approvaldata.description = descriptiontext
+            approvaldata.remark = remarksTextField.text
+            approvaldata.requesteddate = Date()
+            approvaldata.removed = false
+            approvaldata.removedDate = Date()
+            timeOffApprovalservice.updateApproval(approvaldata, completion: { [weak self] (result) in
+                guard self != nil else { return }
+                switch result {
+                case .success(_):
+                    self!.handleDismissView()
+                    print("sucees while Fetching Workers")
+                    
+                case .failure( _):
+                    self!.handleDismissView()
+                    print("ERROR while Fetching Workers")
+                }
+               
+            })
+            
+
 
         }
     }
-
 }

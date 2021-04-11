@@ -15,7 +15,17 @@ class ApproveView: UIViewController,Storyboarded {
     @IBOutlet weak var DiscardButton: UIButton!
     @IBOutlet weak var SaveButton: UIButton!
     @IBOutlet weak var remarksTextField: UITextField!
-
+    let timeOffApprovalservice = TimeOffApprovalService()
+    var selectedWorker: Worker!
+    var workersPickerDataSource: [Worker] = []
+    var workername = String()
+    var startdate = Date()
+    var enddate = Date()
+    var leavetype = String()
+    var leavestatus = String()
+    var descriptiontext = String()
+    var remark = String()
+    var workerID = Int()
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTapGesture()
@@ -46,7 +56,41 @@ class ApproveView: UIViewController,Storyboarded {
                    // show the alert
                    self.present(alert, animated: true, completion: nil)
         }else{
-            handleDismissView()
+            
+             let formatter = DateFormatter()
+            formatter.dateFormat = "yyyy-MM-dd"
+            var approvaldata = Approval()
+            approvaldata.approvername = "Adam"
+            approvaldata.approvedby = 2
+            approvaldata.approveddate = Date()
+            approvaldata.workerID = workerID
+            approvaldata.workername = workername
+            approvaldata.worker = selectedWorker
+            approvaldata.startdate = startdate
+            approvaldata.enddate = enddate
+            approvaldata.typeofleave = leavetype
+            approvaldata.status = leavestatus
+            approvaldata.description = descriptiontext
+            approvaldata.remark = remarksTextField.text
+            approvaldata.requesteddate = Date()
+            approvaldata.removed = false
+            approvaldata.removedDate = Date()
+            timeOffApprovalservice.updateApproval(approvaldata, completion: { [weak self] (result) in
+                guard self != nil else { return }
+                switch result {
+                case .success(_):
+                   // self.coddelegate.dummyFunction()
+                    self!.handleDismissView()
+                    print("sucees while Fetching Workers")
+                    
+                case .failure( _):
+                    self!.handleDismissView()
+                    print("ERROR while Fetching Workers")
+                }
+               
+            })
+            
+
 
         }
     }

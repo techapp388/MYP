@@ -63,11 +63,7 @@ class TimeOffApprovalRepository: BaseRepository{
             "approveddate"       : worker.approveddate,
             "removed"            : worker.removed,
             "removedDate"        : worker.removedDate
-//            "removedDate"        : DateManager.getStandardDateString(date: worker.removedDate),
-//        ,
-//        \(COLUMNS.REMOVED_DATE)
-//        \(COLUMNS.APPROVED_BY),
-//        \(COLUMNS.APPROVED_DATE),
+
         ]
         let sql = """
             INSERT INTO \(tableName) (
@@ -100,8 +96,7 @@ class TimeOffApprovalRepository: BaseRepository{
                     :approveddate
             )
             """
-        //                \(COLUMNS.REMOVED_DATE),
-        //                    :removeDate,
+       
         print("ARGUMENTS: \(arguments)")
         AppDatabase.shared.executeSQL(sql: sql,
                                       arguments: arguments,
@@ -111,46 +106,45 @@ class TimeOffApprovalRepository: BaseRepository{
                                       fail: failure)
     }
     
+    
     func updateApproval(worker: Approval, success: @escaping() -> (), failure: @escaping(_ error: Error) -> ()) {
+
         let arguments: StatementArguments = [
-            "id"               : worker.workerID,
-            "workername"       : worker.workername,
-            "description"      : worker.description,
-            "startdate"        : worker.startdate,
-            "enddate"          : worker.enddate,
-            "typeofleave"      : worker.typeofleave,
-            "status"           : worker.status,
-            "remark"           : worker.remark,
-            "requesteddate"    : worker.requesteddate,
-            "removed"          : worker.removed
+                       "id"               : worker.workerID,
+                       "workername"       : worker.workername,
+                       "description"      : worker.description,
+                       "startdate"        : worker.startdate,
+                       "enddate"          : worker.enddate,
+                       "typeofleave"      : worker.typeofleave,
+                       "status"           : worker.status,
+                       "remark"           : worker.remark,
+                       "requesteddate"    : worker.requesteddate,
+                       "approvedby"       : worker.approvedby,
+                       "approveddate"     : worker.approveddate
+                       
         ]
-//        ,
-//        "removeDate"       : DateManager.getStandardDateString(date: worker.removedDate)
-//        "approvedby"       : worker.approvedby,
-//        "approveddate"     : worker.approveddate,
+            
         let sql = """
             UPDATE \(tableName) SET
                 \(COLUMNS.WORKER_NAME)          = :workername,
-                \(COLUMNS.DESCRIPTION)          = :description,
-                \(COLUMNS.START_DATE)           = :startdate,
+               \(COLUMNS.DESCRIPTION)          = :description,
+               \(COLUMNS.START_DATE)           = :startdate,
                 \(COLUMNS.END_DATE)             = :enddate,
-                \(COLUMNS.TYPEOF_LEAVE)         = :typeofleave,
+               \(COLUMNS.TYPEOF_LEAVE)         = :typeofleave,
                 \(COLUMNS.STATUS)               = :status,
-                \(COLUMNS.REMARK)               = :remark,
+               \(COLUMNS.REMARK)               = :remark,
                 \(COLUMNS.DATE_REQUESTED)       = :requesteddate,
                 \(COLUMNS.APPROVED_BY)          = :approvedby,
-                \(COLUMNS.APPROVED_DATE)        = :approveddate,
-                
-            WHERE \(tableName).\(setIdKey())    = :id;
+                \(COLUMNS.APPROVED_DATE)        = :approveddate
+            WHERE \(tableName).\(setIdKey()) = :id;
             """
-//        \(COLUMNS.REMOVED)              = :removed,
-//        \(COLUMNS.REMOVED_DATE)         = :removeDate,
+        
         AppDatabase.shared.executeSQL(sql: sql,
-                                      arguments: arguments,
-                                      success: { _ in
+                                     arguments: arguments,
+                                     success: { _ in
                                         success()
-                                      },
-                                      fail: failure)
+                                     },
+                                     fail: failure)
     }
     
     func deleteApproval(worker: Approval, success: @escaping() -> (), failure: @escaping(_ error: Error) -> ()) {

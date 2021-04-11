@@ -74,6 +74,14 @@ class TimeOffListView: BaseDataTableView<Approval, TimeOffApprovalField>, Storyb
         let createWorker = ApproveView.instantiate(storyboard: .APPROVEVIEW)
         let worker = viewModel.getItem(at:index)
        print("awsthi",worker)
+        createWorker.workername = worker.workername!
+        createWorker.startdate = worker.startdate!
+        createWorker.enddate = worker.enddate!
+        createWorker.leavetype = worker.typeofleave!
+        createWorker.leavestatus = worker.status!
+        createWorker.descriptiontext = worker.description!
+        createWorker.remark = worker.remark!
+        createWorker.workerID = worker.workerID!
         self.present(createWorker, animated: true, completion: nil)
         
         
@@ -82,6 +90,15 @@ class TimeOffListView: BaseDataTableView<Approval, TimeOffApprovalField>, Storyb
         let createWorker = rejectView.instantiate(storyboard: .REJECTVIEW)
         let worker = viewModel.getItem(at:index)
         print("awsthi",worker)
+        createWorker.workername = worker.workername!
+        createWorker.startdate = worker.startdate!
+        createWorker.enddate = worker.enddate!
+        createWorker.leavetype = worker.typeofleave!
+        createWorker.leavestatus = worker.status!
+        createWorker.descriptiontext = worker.description!
+        createWorker.remark = worker.remark!
+        createWorker.workerID = worker.workerID!
+
         self.present(createWorker, animated: true, completion: nil)
         
         
@@ -110,18 +127,27 @@ class TimeOffListView: BaseDataTableView<Approval, TimeOffApprovalField>, Storyb
         createWorker.leavestatus = worker.status!
         createWorker.descriptiontext = worker.description!
         createWorker.remark = worker.remark!
+        
         self.present(createWorker, animated: true, completion: nil)
     }
 
 
     override func editItem(at indexPath: IndexPath) {
-//        let createWorker = AddTimeOffApprovalView.instantiate(storyboard: .ADD_TIMEOFF)
-//        let worker = viewModel.getItem(at: indexPath.section)
-//        print("hh",worker)
-//        self.present(createWorker, animated: true, completion: nil)
-            let createWorker = AddTimeOffApprovalView.instantiate(storyboard: .ADD_TIMEOFF)
-            createWorker.coddelegate = self
-            self.present(createWorker, animated: true, completion: nil)
+        let createWorker = AddTimeOffApprovalView.instantiate(storyboard: .ADD_TIMEOFF)
+        let worker = viewModel.getItem(at: indexPath.section)
+        print("hh",worker)
+        createWorker.workername = worker.workername!
+        createWorker.startdate = worker.startdate!
+        createWorker.enddate = worker.enddate!
+        createWorker.leavetype = worker.typeofleave!
+        createWorker.leavestatus = worker.status!
+        createWorker.descriptiontext = worker.description!
+        createWorker.remark = worker.remark!
+        self.present(createWorker, animated: true, completion: nil)
+//            let createWorker = AddTimeOffApprovalView.instantiate(storyboard: .ADD_TIMEOFF)
+//            createWorker.coddelegate = self
+//
+//            self.present(createWorker, animated: true, completion: nil)
 
     }
 }

@@ -97,7 +97,7 @@ class BaseDataTableView<T:RepositoryBaseModel,F>: BaseViewController, SwiftDataT
         let deleteAlert = GlobalFunction.showDeleteAlert(title: title ?? "", message: Constants.Message.DELETE_ROW) { [weak self] in
             guard let self = self else { return }
             self.viewModel.deleteItem(at: indexPath.section)
-            self.reloadView()
+           
         }
         present(deleteAlert, animated: true, completion: nil)
     }
