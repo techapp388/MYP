@@ -2,8 +2,13 @@
 
 import Foundation
 import UIKit
-
+protocol RDelegate {
+        func rejectFunction()
+       
+    }
 class rejectView: UIViewController,Storyboarded {
+    var rejectdelegate: RDelegate!
+
     @IBOutlet weak var backgroundViewContainer: UIView!
     @IBOutlet weak var cancelButton: UIButton!
     @IBOutlet weak var DiscardButton: UIButton!
@@ -73,6 +78,7 @@ class rejectView: UIViewController,Storyboarded {
                 guard self != nil else { return }
                 switch result {
                 case .success(_):
+                    self!.rejectdelegate.rejectFunction()
                     self!.handleDismissView()
                     print("sucees while Fetching Workers")
                     

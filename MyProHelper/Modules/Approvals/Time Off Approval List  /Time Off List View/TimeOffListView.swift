@@ -27,7 +27,17 @@ enum TimeOffApprovalField: String {
 
 
 
-class TimeOffListView: BaseDataTableView<Approval, TimeOffApprovalField>, Storyboarded,ClassBDelegate {
+class TimeOffListView: BaseDataTableView<Approval, TimeOffApprovalField>, Storyboarded,ClassBDelegate,BDelegate, RDelegate {
+    func rejectFunction() {
+        viewModel.isShowingRemoved = true
+         viewModel.reloadData()
+    }
+    
+    func approveFunction() {
+        viewModel.isShowingRemoved = true
+         viewModel.reloadData()
+    }
+    
     
     
     func dummyFunction() {
@@ -82,6 +92,7 @@ class TimeOffListView: BaseDataTableView<Approval, TimeOffApprovalField>, Storyb
         createWorker.descriptiontext = worker.description!
         createWorker.remark = worker.remark!
         createWorker.workerID = worker.workerID!
+        createWorker.codedelegate = self
         self.present(createWorker, animated: true, completion: nil)
         
         
@@ -98,6 +109,7 @@ class TimeOffListView: BaseDataTableView<Approval, TimeOffApprovalField>, Storyb
         createWorker.descriptiontext = worker.description!
         createWorker.remark = worker.remark!
         createWorker.workerID = worker.workerID!
+        createWorker.rejectdelegate = self
 
         self.present(createWorker, animated: true, completion: nil)
         
