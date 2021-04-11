@@ -68,7 +68,7 @@ class rejectView: UIViewController,Storyboarded {
             approvaldata.startdate = startdate
             approvaldata.enddate = enddate
             approvaldata.typeofleave = leavetype
-            approvaldata.status = leavestatus
+            approvaldata.status = "Rejected"
             approvaldata.description = descriptiontext
             approvaldata.remark = remarksTextField.text
             approvaldata.requesteddate = Date()

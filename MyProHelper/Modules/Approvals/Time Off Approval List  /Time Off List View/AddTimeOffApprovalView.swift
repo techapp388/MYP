@@ -44,7 +44,10 @@ class AddTimeOffApprovalView: UIViewController,Storyboarded {
     
     var activePickerView: Int = 0
     var leavePickerDataSource = ["Personal","Sick","Vacation","Voting","Jury Duty","Military"]
-    var leaveStatusPickerDataSource = ["Approved","Requested","Rejected"]
+   
+    
+    //var leaveStatusPickerDataSource = ["Approved","Requested","Rejected"]
+    var leaveStatusPickerDataSource = ["Requested"]
     var workersPickerDataSource: [Worker] = []
     var selectedWorker: Worker!
     

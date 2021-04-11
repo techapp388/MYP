@@ -73,7 +73,7 @@ class ApproveView: UIViewController,Storyboarded {
             approvaldata.startdate = startdate
             approvaldata.enddate = enddate
             approvaldata.typeofleave = leavetype
-            approvaldata.status = leavestatus
+            approvaldata.status = "Approved"
             approvaldata.description = descriptiontext
             approvaldata.remark = remarksTextField.text
             approvaldata.requesteddate = Date()
