@@ -178,15 +178,17 @@ class TimeOffApprovalRepository: BaseRepository{
         }
         //\(condition)
         //\(sortable)
-        
         let sql1 = """
         SELECT * FROM \(tableName)
         LEFT JOIN \(TABLES.WORKERS) ON \(tableName).\(COLUMNS.TIME_OFF_REQUEST_ID) ==
             \(TABLES.WORKERS).\(COLUMNS.WORKER_ID)
+              \(condition)
+        \(sortable)
 
         LIMIT \(LIMIT) OFFSET \(offset);
         """
-        
+       
+
         
         do {
             let timeoffapproval = try queue.read({ (db) -> [Approval] in
@@ -239,23 +241,33 @@ class TimeOffApprovalRepository: BaseRepository{
         }
     }
     
-    private func makeSearchableItems(key: String?) -> String {
-        guard let key = key else { return "" }
-        var yesOrNoCondition = ""
-        if key.lowercased() == "yes" || key.lowercased() == "no" {
-            let yesOrNoValue: String = (key.lowercased() == "yes") ? "1" : "0"
-            yesOrNoCondition = "OR " + makeSearchableCondition(key: yesOrNoValue,
-                                                               fields: [COLUMNS.SALARY,
-                                                                        COLUMNS.HOURLY_WORKER,
-                                                                        COLUMNS.CONTRACTOR
-                                                               ])
-        }
-        return makeSearchableCondition(key: key,
-                                       fields: [
-                                        COLUMNS.FIRST_NAME,
-                                        COLUMNS.LAST_NAME,
-                                        COLUMNS.CELL_NUMBER,
-                                        COLUMNS.EMAIL])
-            + yesOrNoCondition
-    }
+//    private func makeSearchableItems(key: String?) -> String {
+//        guard let key = key else { return "" }
+//        var yesOrNoCondition = ""
+//        if key.lowercased() == "yes" || key.lowercased() == "no" {
+//            let yesOrNoValue: String = (key.lowercased() == "yes") ? "1" : "0"
+//            yesOrNoCondition = "OR " + makeSearchableCondition(key: yesOrNoValue,
+//                                                               fields: [COLUMNS.SALARY,
+//                                                                        COLUMNS.HOURLY_WORKER,
+//                                                                        COLUMNS.CONTRACTOR
+//                                                               ])
+//        }
+//        return makeSearchableCondition(key: key,
+//                                       fields: [
+//                                        COLUMNS.FIRST_NAME,
+//                                        COLUMNS.LAST_NAME,
+//                                        COLUMNS.CELL_NUMBER,
+//                                        COLUMNS.EMAIL])
+//            + yesOrNoCondition
+//    }
+//}
+private func makeSearchableItems(key: String?) -> String {
+    guard let key = key else { return "" }
+    return makeSearchableCondition(key: key,
+                                   fields: [
+                                    COLUMNS.FIRST_NAME,
+                                    COLUMNS.LAST_NAME,
+                                   
+                                   ])
+}
 }
