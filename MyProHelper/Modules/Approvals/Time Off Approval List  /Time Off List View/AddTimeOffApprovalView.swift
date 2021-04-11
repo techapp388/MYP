@@ -63,7 +63,7 @@ class AddTimeOffApprovalView: UIViewController,Storyboarded {
         self.remarksStackView.isHidden = true
         self.fetchWorker()
         self.workerTextField.text = workername
-        self.leaveStatusTxtField.text = leavestatus
+       // self.leaveStatusTxtField.text = leavestatus
         self.leaveTypeTxtField.text = leavetype
         self.descriptionTextField.text = descriptiontext
         self.remarksTextField.text = remark
@@ -210,26 +210,19 @@ class AddTimeOffApprovalView: UIViewController,Storyboarded {
                    // show the alert
                    self.present(alert, animated: true, completion: nil)
         }
-        else if(leaveStatusTxtField.text == ""){
-            print("leaveStatusTxtField")
-            // create the alert
-                   let alert = UIAlertController(title: "Leave Status", message: "Please fill the leave status", preferredStyle: UIAlertController.Style.alert)
-
-                   // add an action (button)
-                   alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
-
-                   // show the alert
-                   self.present(alert, animated: true, completion: nil)
-        }
+//        else if(leaveStatusTxtField.text == ""){
+//            print("leaveStatusTxtField")
+//            // create the alert
+//                   let alert = UIAlertController(title: "Leave Status", message: "Please fill the leave status", preferredStyle: UIAlertController.Style.alert)
+//
+//                   // add an action (button)
+//                   alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+//
+//                   // show the alert
+//                   self.present(alert, animated: true, completion: nil)
+//        }
         else{
-        print("WORKER Name: \(selectedWorker.fullName)")
-        print("Start Date: \(startDatePicker.date)")
-        print("END Date: \(endDatePicker.date)")
-        print("Type of Leave: \(leaveTypeTxtField.text)")
-        print("Leave Status: \(leaveStatusTxtField.text)")
-        print("Description: \(descriptionTextField.text)")
-        print("Remarks: \(remarksTextField.text)")
-        print("WORKER : \(selectedWorker)")
+
         
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd"
@@ -243,7 +236,7 @@ class AddTimeOffApprovalView: UIViewController,Storyboarded {
         approvaldata.startdate = startDatePicker.date
         approvaldata.enddate = endDatePicker.date
         approvaldata.typeofleave = leaveTypeTxtField.text
-        approvaldata.status = leaveStatusTxtField.text
+        approvaldata.status = "Requested"
         approvaldata.description = descriptionTextField.text
         approvaldata.remark = remarksTextField.text
         approvaldata.requesteddate = Date()
@@ -272,18 +265,18 @@ extension AddTimeOffApprovalView: PickerDelegate {
             let item = leavePickerDataSource[selecteditem]
             leaveTypeTxtField.text = String(format: "%@", item)
         }
-        else if activePickerView == 2 {
-            let item = leaveStatusPickerDataSource[selecteditem]
-            if item == "Approved" ||  item == "Rejected"
-            {
-                self.remarksStackView.isHidden = false
-                
-            }else
-            {
-                self.remarksStackView.isHidden = true
-            }
-            leaveStatusTxtField.text = String(format: "%@", item)
-        }
+//        else if activePickerView == 2 {
+//            let item = "Requested"
+//            if item == "Approved" ||  item == "Rejected"
+//            {
+//                self.remarksStackView.isHidden = false
+//
+//            }else
+//            {
+//                self.remarksStackView.isHidden = true
+//            }
+//            leaveStatusTxtField.text = String(format: "%@", item)
+//        }
         else if activePickerView == 3 {
             let item = workersPickerDataSource[selecteditem]
             print("SELETED WORKER: \n \(item )\n\n")

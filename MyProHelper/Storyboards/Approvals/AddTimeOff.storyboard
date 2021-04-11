@@ -117,6 +117,9 @@
                                                             </button>
                                                             <datePicker contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="buP-Yg-feG">
                                                                 <rect key="frame" x="0.0" y="0.0" width="150.5" height="40"/>
+                                                                <date key="maximumDate" timeIntervalSinceReferenceDate="1167562800">
+                                                                    <!--2037-12-31 11:00:00 +0000-->
+                                                                </date>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                                                         <real key="value" value="1"/>
@@ -314,7 +317,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ofZ-Bw-XPF">
                                                 <rect key="frame" x="158.5" y="0.0" width="155.5" height="70"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Leave Status*" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3LH-t5-WU5">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Leave Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3LH-t5-WU5">
                                                         <rect key="frame" x="10" y="4" width="123" height="17"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="123" id="yFK-LG-G0I"/>
@@ -326,7 +329,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aZa-P5-ZXw">
                                                         <rect key="frame" x="10" y="25" width="145.5" height="41"/>
                                                         <subviews>
-                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Please select" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yKO-rb-e4c">
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Requested" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yKO-rb-e4c">
                                                                 <rect key="frame" x="10" y="3" width="135.5" height="35"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits"/>
@@ -334,11 +337,8 @@
                                                                     <outlet property="delegate" destination="aR4-6Z-n4i" id="0lr-gZ-pXO"/>
                                                                 </connections>
                                                             </textField>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5hg-Q8-5aJ">
+                                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5hg-Q8-5aJ">
                                                                 <rect key="frame" x="0.0" y="0.0" width="145.5" height="41"/>
-                                                                <connections>
-                                                                    <action selector="leaveStatusActionWith_sender:" destination="aR4-6Z-n4i" eventType="touchUpInside" id="WGs-tB-ubX"/>
-                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
