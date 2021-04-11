@@ -8,8 +8,12 @@
 
 import Foundation
 import UIKit
-
+protocol BDelegate {
+        func approveFunction()
+       
+    }
 class ApproveView: UIViewController,Storyboarded {
+    var coddelegate: BDelegate!
     @IBOutlet weak var backgroundViewContainer: UIView!
     @IBOutlet weak var cancelButton: UIButton!
     @IBOutlet weak var DiscardButton: UIButton!
@@ -79,7 +83,7 @@ class ApproveView: UIViewController,Storyboarded {
                 guard self != nil else { return }
                 switch result {
                 case .success(_):
-                   // self.coddelegate.dummyFunction()
+                    self.coddelegate.approveFunction()
                     self!.handleDismissView()
                     print("sucees while Fetching Workers")
                     
