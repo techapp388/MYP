@@ -17,7 +17,7 @@ struct GlobalFunction {
                                        style: .default,
                                        handler: editHandler)
         let deleteAction = UIAlertAction(title: deleteTitle ?? "DELETE".localize,
-                                         style: .destructive, handler: deleteHandler)
+                                         style: .default, handler: deleteHandler)
         let closeAction = UIAlertAction(title: "CLOSE".localize,
                                         style: .cancel, handler: { _ in
             alert.dismiss(animated: true, completion: nil)

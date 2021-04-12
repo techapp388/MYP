@@ -121,6 +121,7 @@ class AddTimeOffApprovalView: UIViewController,Storyboarded {
        formatter.dateFormat = "yyyy-MM-dd"
         if selectedDatePicker == 1
         {
+
             startDateTxtField.text = formatter.string(from: datePicker.date)
         }else if selectedDatePicker == 2
         {
