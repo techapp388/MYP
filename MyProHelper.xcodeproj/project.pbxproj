@@ -260,6 +260,7 @@
 		60C0EA3E248A6FF600CED398 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C0EA3D248A6FF600CED398 /* Constants.swift */; };
 		60F31B5924AE14720089CDF7 /* DashboardLayoutTableHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60F31B5824AE14720089CDF7 /* DashboardLayoutTableHeader.xib */; };
 		60F31B5B24AE148A0089CDF7 /* DashboardLayoutTableHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F31B5A24AE148A0089CDF7 /* DashboardLayoutTableHeader.swift */; };
+		7901020B26260D5400868A37 /* InvoiceApprovals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7901020A26260D5400868A37 /* InvoiceApprovals.swift */; };
 		792D22C62621FA0A00236E9F /* ShowApprovel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792D22C52621FA0A00236E9F /* ShowApprovel.swift */; };
 		79623A58261DC83200A34CF6 /* AddTimeShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79623A57261DC83200A34CF6 /* AddTimeShowView.swift */; };
 		79623A5D261DC93300A34CF6 /* AddtimeShow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79623A5C261DC93300A34CF6 /* AddtimeShow.storyboard */; };
@@ -683,6 +684,7 @@
 		60C0EA3D248A6FF600CED398 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		60F31B5824AE14720089CDF7 /* DashboardLayoutTableHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashboardLayoutTableHeader.xib; sourceTree = "<group>"; };
 		60F31B5A24AE148A0089CDF7 /* DashboardLayoutTableHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardLayoutTableHeader.swift; sourceTree = "<group>"; };
+		7901020A26260D5400868A37 /* InvoiceApprovals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceApprovals.swift; sourceTree = "<group>"; };
 		792D22C52621FA0A00236E9F /* ShowApprovel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowApprovel.swift; sourceTree = "<group>"; };
 		79623A57261DC83200A34CF6 /* AddTimeShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTimeShowView.swift; sourceTree = "<group>"; };
 		79623A5C261DC93300A34CF6 /* AddtimeShow.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddtimeShow.storyboard; sourceTree = "<group>"; };
@@ -1552,6 +1554,7 @@
 		522925272609044A0066F02C /* Approvals */ = {
 			isa = PBXGroup;
 			children = (
+				7901020926260D0700868A37 /* Invoice Approvals */,
 				522925282609049E0066F02C /* Time Off Approval List   */,
 			);
 			path = Approvals;
@@ -1755,6 +1758,14 @@
 				463AEE682593CF20007B0A78 /* UIColor+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7901020926260D0700868A37 /* Invoice Approvals */ = {
+			isa = PBXGroup;
+			children = (
+				7901020A26260D5400868A37 /* InvoiceApprovals.swift */,
+			);
+			path = "Invoice Approvals";
 			sourceTree = "<group>";
 		};
 		8B8EEFCD24B85EC1009F52E6 /* Parts */ = {
@@ -3145,6 +3156,7 @@
 				8F78507F25473C1E0030B44A /* ServiceListView.swift in Sources */,
 				14A04A8425B84AAA00755A2D /* JobConfirmationView.swift in Sources */,
 				46F7ACF525ACC1CC008E65BA /* CreateDeviceViewModel.swift in Sources */,
+				7901020B26260D5400868A37 /* InvoiceApprovals.swift in Sources */,
 				14C406FC25B603DF00F0EFE4 /* HolidayService.swift in Sources */,
 				8F34871F2546034200ACD43B /* PartListView.swift in Sources */,
 				A879562024A5D10300E0E46C /* UIButton+Extensions.swift in Sources */,
