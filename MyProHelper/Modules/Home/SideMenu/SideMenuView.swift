@@ -70,6 +70,7 @@ fileprivate enum SubCell {
     case TimeSheets
     case TimeOffApprovals
     case OpenJobDetails
+    
 }
 
 class SideMenuView: UIViewController, Storyboarded {
@@ -429,7 +430,7 @@ extension SideMenuView {
         case .CreatePayroll:
             break
         case .InvoiceApprovals:
-            navigateToView(withKey: .timeoffapproval)
+            navigateToView(withKey: .Invoiceapproval)
         case .WorkOrderApprovals:
             break
         case .PurchaseOrderApprovals:

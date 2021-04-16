@@ -270,6 +270,9 @@
 		79623A71261DFEE300A34CF6 /* rejectView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79623A70261DFEE300A34CF6 /* rejectView.storyboard */; };
 		799AE9A8261827D200C9D787 /* 299.db in Resources */ = {isa = PBXBuildFile; fileRef = 799AE9A7261827D200C9D787 /* 299.db */; };
 		799AE9B0261827EB00C9D787 /* 299LocationData.db in Resources */ = {isa = PBXBuildFile; fileRef = 799AE9AF261827EB00C9D787 /* 299LocationData.db */; };
+		79FB3C242628A7C50031B18C /* InvoiceListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FB3C232628A7C50031B18C /* InvoiceListModel.swift */; };
+		79FB3C2C2628B6BE0031B18C /* InvoiceApprovals.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79FB3C2B2628B6BE0031B18C /* InvoiceApprovals.storyboard */; };
+		79FB3C312628B8610031B18C /* addInvoice.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79FB3C302628B8610031B18C /* addInvoice.storyboard */; };
 		8B12C12524C56ECE00FCAD5E /* Wage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B12C12424C56ECE00FCAD5E /* Wage.swift */; };
 		8B32467F24D1C67500E058DB /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B32467E24D1C67500E058DB /* Device.swift */; };
 		8B32468F24D1D36D00E058DB /* PartLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B32468E24D1D36D00E058DB /* PartLocation.swift */; };
@@ -694,6 +697,9 @@
 		79623A70261DFEE300A34CF6 /* rejectView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = rejectView.storyboard; sourceTree = "<group>"; };
 		799AE9A7261827D200C9D787 /* 299.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = 299.db; sourceTree = "<group>"; };
 		799AE9AF261827EB00C9D787 /* 299LocationData.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = 299LocationData.db; sourceTree = "<group>"; };
+		79FB3C232628A7C50031B18C /* InvoiceListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceListModel.swift; sourceTree = "<group>"; };
+		79FB3C2B2628B6BE0031B18C /* InvoiceApprovals.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InvoiceApprovals.storyboard; sourceTree = "<group>"; };
+		79FB3C302628B8610031B18C /* addInvoice.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = addInvoice.storyboard; sourceTree = "<group>"; };
 		7FB777A367EF49FFB85525F6 /* Pods-MyProHelperTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyProHelperTests.release.xcconfig"; path = "Target Support Files/Pods-MyProHelperTests/Pods-MyProHelperTests.release.xcconfig"; sourceTree = "<group>"; };
 		8B12C12424C56ECE00FCAD5E /* Wage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wage.swift; sourceTree = "<group>"; };
 		8B32467E24D1C67500E058DB /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
@@ -1547,6 +1553,8 @@
 				52292517260903060066F02C /* ApprovalsList.storyboard */,
 				79623A5C261DC93300A34CF6 /* AddtimeShow.storyboard */,
 				79623A6B261DFEC700A34CF6 /* ApproveView.storyboard */,
+				79FB3C2B2628B6BE0031B18C /* InvoiceApprovals.storyboard */,
+				79FB3C302628B8610031B18C /* addInvoice.storyboard */,
 			);
 			path = Approvals;
 			sourceTree = "<group>";
@@ -1764,6 +1772,7 @@
 			isa = PBXGroup;
 			children = (
 				7901020A26260D5400868A37 /* InvoiceApprovals.swift */,
+				79FB3C232628A7C50031B18C /* InvoiceListModel.swift */,
 			);
 			path = "Invoice Approvals";
 			sourceTree = "<group>";
@@ -2659,6 +2668,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				46921E8325A25C6A0064C01E /* CheckboxCell.xib in Resources */,
+				79FB3C312628B8610031B18C /* addInvoice.storyboard in Resources */,
 				46D362BD259CE5BC00A908EC /* RolesCell.xib in Resources */,
 				46D362D3259CF89100A908EC /* ColorPickerCell.xib in Resources */,
 				799AE9B0261827EB00C9D787 /* 299LocationData.db in Resources */,
@@ -2677,6 +2687,7 @@
 				8F7850BB254769270030B44A /* AssetType.storyboard in Resources */,
 				14209E0025E41C590061C15B /* JobDetail.storyboard in Resources */,
 				144BF5D925DA91FA002F0B18 /* Receipt.storyboard in Resources */,
+				79FB3C2C2628B6BE0031B18C /* InvoiceApprovals.storyboard in Resources */,
 				46C8675A2588EA0F000298AE /* AppTableViewHeaderCell.xib in Resources */,
 				52292519260903060066F02C /* ApprovalsList.storyboard in Resources */,
 				A8589CCA24B45C7D00EC70C9 /* GenericMenuSubmenuTableViewCell.xib in Resources */,
@@ -3081,6 +3092,7 @@
 				14C4071925B603DF00F0EFE4 /* PartLocationService.swift in Sources */,
 				145AAE5525B5EC0C002E8438 /* JobHistoryView.swift in Sources */,
 				46E0C2FF25D0519000C7B0F4 /* CreatePaymentView.swift in Sources */,
+				79FB3C242628A7C50031B18C /* InvoiceListModel.swift in Sources */,
 				8FDD0FE125376957003260CE /* DateManager.swift in Sources */,
 				46635C1C256C79AD00B9D41C /* DashboardLayoutViewController.swift in Sources */,
 				46C867592588EA0F000298AE /* AppTableViewHeaderCell.swift in Sources */,
