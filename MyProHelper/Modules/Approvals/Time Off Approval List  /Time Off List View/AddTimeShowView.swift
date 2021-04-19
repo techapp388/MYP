@@ -55,6 +55,8 @@ class AddTimeShowView: UIViewController,Storyboarded {
         
         self.remarksStackView.isHidden = true
         self.fetchWorker()
+        startDatePicker.minimumDate = Date()
+        endDatePicker.minimumDate = Date()
     }
     @objc func dueDateChanged(sender:UIDatePicker){
         let formatter = DateFormatter()

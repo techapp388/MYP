@@ -430,7 +430,7 @@ extension SideMenuView {
         case .CreatePayroll:
             break
         case .InvoiceApprovals:
-            navigateToView(withKey: .Invoiceapproval)
+            navigateToView(withKey: .invoice)
         case .WorkOrderApprovals:
             break
         case .PurchaseOrderApprovals:

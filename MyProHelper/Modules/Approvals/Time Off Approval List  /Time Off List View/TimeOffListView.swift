@@ -48,6 +48,7 @@ class TimeOffListView: BaseDataTableView<Approval, TimeOffApprovalField>, Storyb
 
     override func viewDidLoad() {
         viewModel = TimeOffListViewModel(delegate: self)
+      
         super.viewDidLoad()
     }
     

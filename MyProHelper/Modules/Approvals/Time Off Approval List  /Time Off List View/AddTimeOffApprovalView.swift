@@ -67,6 +67,9 @@ class AddTimeOffApprovalView: UIViewController,Storyboarded {
         self.leaveTypeTxtField.text = leavetype
         self.descriptionTextField.text = descriptiontext
         self.remarksTextField.text = remark
+        startDatePicker.minimumDate = Date()
+        endDatePicker.minimumDate = Date()
+                
     }
     @objc func dueDateChanged(sender:UIDatePicker){
         let formatter = DateFormatter()

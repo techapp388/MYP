@@ -48,7 +48,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fkv-xx-wEg">
-                                <rect key="frame" x="0.0" y="160" width="834" height="952"/>
+                                <rect key="frame" x="0.0" y="56" width="834" height="1056"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="hvU-DW-1aG">
@@ -66,12 +66,6 @@
                                     <action selector="addButtonPressedWithSender:" destination="Zfa-0m-QM0" eventType="touchUpInside" id="GKk-rF-JhI"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L4w-gr-M3i">
-                                <rect key="frame" x="20" y="56" width="316" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bPa-4f-x21"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -83,7 +77,7 @@
                             <constraint firstItem="hvU-DW-1aG" firstAttribute="top" secondItem="bPa-4f-x21" secondAttribute="top" id="YCh-4x-NUS"/>
                             <constraint firstItem="fkv-xx-wEg" firstAttribute="leading" secondItem="bPa-4f-x21" secondAttribute="leading" id="rfL-31-dUu"/>
                             <constraint firstItem="bPa-4f-x21" firstAttribute="trailing" secondItem="fkv-xx-wEg" secondAttribute="trailing" id="vgj-Wo-th4"/>
-                            <constraint firstItem="fkv-xx-wEg" firstAttribute="top" secondItem="hvU-DW-1aG" secondAttribute="bottom" constant="104" id="y57-nQ-Xvk"/>
+                            <constraint firstItem="fkv-xx-wEg" firstAttribute="top" secondItem="hvU-DW-1aG" secondAttribute="bottom" id="y57-nQ-Xvk"/>
                             <constraint firstItem="hvU-DW-1aG" firstAttribute="trailing" secondItem="bPa-4f-x21" secondAttribute="trailing" id="zwe-KL-hsS"/>
                         </constraints>
                     </view>

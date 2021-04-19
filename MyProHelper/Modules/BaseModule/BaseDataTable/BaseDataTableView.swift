@@ -86,7 +86,7 @@ class BaseDataTableView<T:RepositoryBaseModel,F>: BaseViewController, SwiftDataT
         view.backgroundColor = UIColor.white
         view.addSubview(dataTable)
         NSLayoutConstraint.activate([
-            dataTable.topAnchor.constraint(equalTo: segmentedControl.bottomAnchor, constant: 20),
+            dataTable.topAnchor.constraint(equalTo: segmentedControl.bottomAnchor, constant: 0),
             dataTable.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             dataTable.bottomAnchor.constraint(equalTo: view.layoutMarginsGuide.bottomAnchor),
             dataTable.trailingAnchor.constraint(equalTo: view.trailingAnchor),
