@@ -328,6 +328,7 @@
 
 // JOB DETAIL ITEM
 "OPEN_JOB_DETAILS"                 = "Open Job Details";
+"WORKER_ORDER_APPROVELS"                 = "Worker order Approves";
 "SHORT_DESCRIPTION"                = "Short Description";
 "DETAILS"                          = "Details";
 

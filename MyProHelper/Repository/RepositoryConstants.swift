@@ -51,6 +51,9 @@ struct RepositoryConstants {
     
     struct Columns {
         // GENERIC COLUMNS
+        static let ATTACHMENTS_date              = "Attachments"
+        static let REQUESTED_DATE              = "Requesteddate"
+        static let TOTAL_AMOUNT              = "Totalamount"
         static let DESCRIPTION              = "Description"
         static let MODEL_INFO               = "ModelInfo"
         static let DATE_PURHCASED           = "DatePurchased"
@@ -97,7 +100,6 @@ struct RepositoryConstants {
         static let PRICE_PAID               = "PricePaid"
         static let PRICE_TO_RESELL          = "PriceToResell"
         static let WORKER_NAME              = "WorkerName"
-        
         
         // ASSETS TABLE COLUMNS
         static let ASSET_ID                 = "AssetID"

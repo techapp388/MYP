@@ -249,6 +249,7 @@ class SideMenuView: UIViewController, Storyboarded {
             return "TIME_OFF_APPROVALS".localize
         case .OpenJobDetails:
             return "OPEN_JOB_DETAILS".localize
+      
         }
     }
 }
@@ -432,6 +433,8 @@ extension SideMenuView {
         case .InvoiceApprovals:
             navigateToView(withKey: .invoice)
         case .WorkOrderApprovals:
+            navigateToView(withKey: .WorkOrderApprovals)
+
             break
         case .PurchaseOrderApprovals:
             break
@@ -490,6 +493,7 @@ extension SideMenuView {
         case .PurchaseOrders:
             break
         case .WorkOrders:
+            
             break
         case .CurrentTimeSheet:
             break
