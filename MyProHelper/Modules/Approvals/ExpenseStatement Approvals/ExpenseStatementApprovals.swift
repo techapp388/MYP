@@ -48,9 +48,9 @@ class ExpenseStatementApprovals: BaseDataTableView<Approval, ExpenseStatementApp
     
 
     override func viewDidLoad() {
-//        viewModel = ExpenseStatementModal(delegate: self)
-//
-//        super.viewDidLoad()
+        viewModel = ExpenseStatementModal(delegate: self)
+
+        super.viewDidLoad()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -59,9 +59,13 @@ class ExpenseStatementApprovals: BaseDataTableView<Approval, ExpenseStatementApp
     }
     
     @objc override func handleAddItem() {
-    let createWorker = AddTimeOffApprovalView.instantiate(storyboard: .ADD_TIMEOFF)
-        createWorker.coddelegate = self
-        self.present(createWorker, animated: true, completion: nil)
+//    let createWorker = AddTimeOffApprovalView.instantiate(storyboard: .ADD_TIMEOFF)
+//        createWorker.coddelegate = self
+//        self.present(createWorker, animated: true, completion: nil)
+        let createInvoiceView = CreateInvoiceView.instantiate(storyboard: .INVOICE)
+        createInvoiceView.viewModel = CreateInvoiceViewModel(attachmentSource: .INVOICE)
+        createInvoiceView.setViewMode(isEditingEnabled: true)
+        navigationController?.pushViewController(createInvoiceView, animated: true)
     }
 
     override func setDataTableFields() {

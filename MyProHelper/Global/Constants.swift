@@ -56,6 +56,8 @@ struct Constants {
         case REJECTVIEW               = "rejectView"
         case INVOICEAPPROVAL             = "InvoiceApprovals"
         case WORKORDERAPPROVALS             = "WorkerOrderApprovals"
+        case PURCHAGEORDERAPPROVALS             = "PurchaseOrderApprovals"
+        case EXPENSESTATEMENTAPPROVALS             = "ExpenseStatementApprovals"
 
 
     }

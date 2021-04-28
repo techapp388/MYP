@@ -7,7 +7,7 @@
 //
 
 import UIKit
-class ExpenseStatementModal: BaseDataTableViewModel<Approval, WorkerOrderApprovalField> {
+class ExpenseStatementModal: BaseDataTableViewModel<Approval, ExpenseStatementApprovalField> {
     let service = TimeOffApprovalService()
     override func reloadData() {
         hasMoreData = true

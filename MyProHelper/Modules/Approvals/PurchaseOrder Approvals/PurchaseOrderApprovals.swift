@@ -48,7 +48,7 @@ class PurchaseOrderApprovals: BaseDataTableView<Approval, PurchaseOrderApprovalF
     
 
     override func viewDidLoad() {
-       // viewModel = PurchaseOrderModal(delegate: self)
+        viewModel = PurchaseOrderModal(delegate: self)
       
         super.viewDidLoad()
     }
@@ -59,9 +59,10 @@ class PurchaseOrderApprovals: BaseDataTableView<Approval, PurchaseOrderApprovalF
     }
     
     @objc override func handleAddItem() {
-    let createWorker = AddTimeOffApprovalView.instantiate(storyboard: .ADD_TIMEOFF)
-        createWorker.coddelegate = self
-        self.present(createWorker, animated: true, completion: nil)
+        let createInvoiceView = CreateInvoiceView.instantiate(storyboard: .INVOICE)
+        createInvoiceView.viewModel = CreateInvoiceViewModel(attachmentSource: .INVOICE)
+        createInvoiceView.setViewMode(isEditingEnabled: true)
+        navigationController?.pushViewController(createInvoiceView, animated: true)
     }
 
     override func setDataTableFields() {

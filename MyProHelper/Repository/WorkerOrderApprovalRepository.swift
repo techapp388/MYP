@@ -11,19 +11,18 @@ import GRDB
 class WorkerOrderApprovalRepository: BaseRepository{
     
     init() {
-        super.init(table: .APPROVALS)
+        super.init(table: .WORKERODRERAPPROVALS)
         createSelectedLayoutTable()
     }
     
     override func setIdKey() -> String {
-        return COLUMNS.WORKER_ID
+        return COLUMNS.PART_ID
     }
     
     private func createSelectedLayoutTable() {
         let sql = """
             CREATE TABLE IF NOT EXISTS \(tableName)(
-               \(COLUMNS.TIME_OFF_REQUEST_ID) INTEGER PRIMARY KEY AUTOINCREMENT UNIQUE NOT NULL,
-                \(COLUMNS.WORKER_ID) INTEGER REFERENCES Workers (WorkerID) NOT NULL,
+               \(COLUMNS.PART_ID) INTEGER PRIMARY KEY AUTOINCREMENT UNIQUE NOT NULL,
                 \(COLUMNS.WORKER_NAME)      TEXT (100) NOT NULL,
                 \(COLUMNS.CUSTOMER_NAME)    TEXT (100) NOT NULL,
                 \(COLUMNS.DESCRIPTION)      TEXT(100),
@@ -45,7 +44,7 @@ class WorkerOrderApprovalRepository: BaseRepository{
     
     func createApproval(worker: WorkerOrderApprovel, success: @escaping(_ id: Int64) -> (), failure: @escaping(_ error: Error) -> ()) {
         let arguments: StatementArguments = [
-            "workerid"         : worker.workerID,
+//            "workerid"         : worker.workerID,
             "workername"         : worker.workername,
             "customername"       : worker.customername,
             "description"        : worker.description,

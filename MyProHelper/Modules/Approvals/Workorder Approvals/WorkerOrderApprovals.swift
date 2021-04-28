@@ -58,9 +58,10 @@ class WorkerOrderApprovals: BaseDataTableView<Approval, WorkerOrderApprovalField
     }
     
     @objc override func handleAddItem() {
-    let createWorker = AddTimeOffApprovalView.instantiate(storyboard: .ADD_TIMEOFF)
-        createWorker.coddelegate = self
-        self.present(createWorker, animated: true, completion: nil)
+        let createInvoiceView = WorkerOrderApprovals.instantiate(storyboard: .WORKORDERAPPROVALS)
+      //  createInvoiceView.viewModel = WorkerOrderModal(attachmentSource: .WORKORDERAPPROVALS)
+       // createInvoiceView.setViewMode(isEditingEnabled: true)
+        navigationController?.pushViewController(createInvoiceView, animated: true)
     }
 
     override func setDataTableFields() {

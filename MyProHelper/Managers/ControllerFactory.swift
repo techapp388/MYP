@@ -43,7 +43,8 @@ public enum ControllerKeys:String,CaseIterable {
     case AddTimeOffApproval = "AddTimeOffApproval"
     case Invoiceapproval = "Invoice Approval"
     case WorkOrderApprovals = "Worker Order Approvals"
-
+    case PurchaseOrderApprovals = "Purchase Order Approvals"
+    case ExpenseStatementApprovals = "Expense Statement Approvals"
     
 }
 
@@ -159,6 +160,12 @@ struct ControllerFactory {
             return GenericViewController(viewController: AddTimeOff, key: key)
         case .WorkOrderApprovals:
             let WorkerOrder = WorkerOrderApprovals.instantiate(storyboard: .WORKORDERAPPROVALS)
+            return GenericViewController(viewController: WorkerOrder, key: key)
+        case .PurchaseOrderApprovals:
+            let WorkerOrder = PurchaseOrderApprovals.instantiate(storyboard: .PURCHAGEORDERAPPROVALS)
+            return GenericViewController(viewController: WorkerOrder, key: key)
+        case .ExpenseStatementApprovals:
+            let WorkerOrder = ExpenseStatementApprovals.instantiate(storyboard: .EXPENSESTATEMENTAPPROVALS)
             return GenericViewController(viewController: WorkerOrder, key: key)
             
         }

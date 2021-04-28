@@ -41,6 +41,7 @@ enum Table {
     case JOB_DETAILS
     case RECEIPTS
     case APPROVALS
+    case WORKERODRERAPPROVALS
 }
 
 class BaseRepository {
@@ -122,6 +123,9 @@ class BaseRepository {
             return RepositoryConstants.Tables.RECEIPTS
         case .APPROVALS:
             return RepositoryConstants.Tables.APPROVAL
+        case .WORKERODRERAPPROVALS:
+            return RepositoryConstants.Tables.WORKERODRERAPPROVALS
+        
         }
     }
     

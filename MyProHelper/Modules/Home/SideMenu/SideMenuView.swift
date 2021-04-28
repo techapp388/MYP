@@ -437,8 +437,10 @@ extension SideMenuView {
 
             break
         case .PurchaseOrderApprovals:
+            navigateToView(withKey: .PurchaseOrderApprovals)
             break
         case .ExpenseStatementApprovals:
+            navigateToView(withKey: .ExpenseStatementApprovals)
             break
         case .Jobs:
             break

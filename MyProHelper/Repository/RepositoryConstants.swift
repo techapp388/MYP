@@ -47,6 +47,8 @@ struct RepositoryConstants {
         static let JOB_DETAILS              = "JobDetails"
 //        static let APPROVAL                 = "TimeOffRequests"
         static let APPROVAL                 = "TimeOffRequest"
+        static let WORKERODRERAPPROVALS     = "WorkOrderUsed"
+
     }
     
     struct Columns {

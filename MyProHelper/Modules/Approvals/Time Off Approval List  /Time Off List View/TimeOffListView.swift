@@ -111,7 +111,6 @@ class TimeOffListView: BaseDataTableView<Approval, TimeOffApprovalField>, Storyb
         createWorker.remark = worker.remark!
         createWorker.workerID = worker.workerID!
         createWorker.rejectdelegate = self
-
         self.present(createWorker, animated: true, completion: nil)
         
         
@@ -140,7 +139,6 @@ class TimeOffListView: BaseDataTableView<Approval, TimeOffApprovalField>, Storyb
         createWorker.leavestatus = worker.status!
         createWorker.descriptiontext = worker.description!
         createWorker.remark = worker.remark!
-        
         self.present(createWorker, animated: true, completion: nil)
     }
 
@@ -157,10 +155,7 @@ class TimeOffListView: BaseDataTableView<Approval, TimeOffApprovalField>, Storyb
         createWorker.descriptiontext = worker.description!
         createWorker.remark = worker.remark!
         self.present(createWorker, animated: true, completion: nil)
-//            let createWorker = AddTimeOffApprovalView.instantiate(storyboard: .ADD_TIMEOFF)
-//            createWorker.coddelegate = self
-//
-//            self.present(createWorker, animated: true, completion: nil)
+
 
     }
 }

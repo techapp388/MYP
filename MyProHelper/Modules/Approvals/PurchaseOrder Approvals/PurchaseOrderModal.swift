@@ -7,7 +7,7 @@
 //
 
 import UIKit
-class PurchaseOrderModal: BaseDataTableViewModel<Approval, WorkerOrderApprovalField> {
+class PurchaseOrderModal: BaseDataTableViewModel<Approval, PurchaseOrderApprovalField> {
     let service = TimeOffApprovalService()
     override func reloadData() {
         hasMoreData = true
